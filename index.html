@@ -491,13 +491,14 @@
             </p>
             <div>
               <div
-                class="mx-auto mt-5 flex w-full bg-button text-primary/70 md:w-3/5 lg:w-2/4"
+                class="mx-auto mt-5 flex w-full bg-button text-primary/70 md:w-3/5"
               >
-                <p class="active-tab tab border-r border-r-primary/30">
+                <p class="active-tab px-2 tab border-r border-r-primary/30">
                   Web Design
                 </p>
-                <p class="tab border-r border-r-primary/30">Web Development</p>
-                <p class="tab">Mobile Apps</p>
+                <p class="tab px-2 border-r border-r-primary/30">Web Development</p>
+                <p class="tab px-2 border-r border-r-primary/30">Mobile Apps</p>
+                <p class="tab px-2">Desktop Apps</p>
               </div>
               <div class="portfolio-item grid" id="webDesign">
                 <div class="p-5 text-center">
@@ -672,13 +673,55 @@
                     alt=""
                   />
                 </div>
+              </div><div class="portfolio-item hidden" id="desktopApps">
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/4.png"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/5.png"
+                    alt=""
+                  />
+                </div>
+                
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="main-container mt-5 py-10 md:px-10">
+      <!-- <div class="main-container mt-5 py-10 md:px-10">
         <div>
           <div>
             <h1 class="w-full text-center text-2xl font-bold">
@@ -810,9 +853,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="mt-10 bg-header">
+      <div class=" bg-header">
         <div class="main-container py-10">
           <div class="mx-auto w-10/12">
             <div class="w-full scroll-m-10 py-4" id="Contact">
@@ -1057,6 +1100,10 @@
         if (e.currentTarget.innerText == "Mobile Apps") {
           document.querySelector("#mobileApps").classList.remove("hidden");
           document.querySelector("#mobileApps").classList.add("grid");
+        }
+        if (e.currentTarget.innerText == "Desktop Apps") {
+          document.querySelector("#desktopApps").classList.remove("hidden");
+          document.querySelector("#desktopApps").classList.add("grid");
         }
       }
     };
