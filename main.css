@@ -678,16 +678,12 @@ h4{
   width: 2rem;
 }
 
-.w-14{
-  width: 3.5rem;
-}
-
-.w-16{
-  width: 4rem;
-}
-
 .min-w-\[285px\]{
   min-width: 285px;
+}
+
+.min-w-\[60px\]{
+  min-width: 60px;
 }
 
 .max-w-fit{
@@ -776,12 +772,6 @@ h4{
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-1 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
@@ -1093,9 +1083,9 @@ h4{
   line-height: 1.75rem;
 }
 
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-base{
@@ -1103,9 +1093,9 @@ h4{
   line-height: 1.5rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-\[10px\]{
